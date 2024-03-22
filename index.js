@@ -7,7 +7,7 @@ const app=express()
 app.use(express.json())
 app.use(cors())
 const PORT=4000
-const mongoDBURL='mongodb+srv://backend:Thiru123@projectcollection.ijzu5bt.mongodb.net/?retryWrites=true&w=majority&appName=PROJECTCOLLECTION'
+const mongoDBURL='mongodb+srv://backend:Thiru123@projectcollection.ijzu5bt.mongodb.net/test?retryWrites=true&w=majority&appName=PROJECTCOLLECTION'
 
 
 app.get('/',(req,res)=>{
