@@ -5,7 +5,7 @@ const router=express.Router()
 
 
 
-//ROUTE FOR NEW BOOK
+//ROUTE FOR NEW PROJECT
 
 router.post('/',async(req,res)=>{
     try{
@@ -25,7 +25,7 @@ router.post('/',async(req,res)=>{
     }
 })
 
-//GET ALL BOOKS
+//GET ALL PROJECTS
 
 router.get('/',async(req,res)=>{
     try{
@@ -37,7 +37,7 @@ router.get('/',async(req,res)=>{
     }
 })
 
-//GET one BOOK by ID
+//GET one PROJECT by ID
 
 router.get('/:id',async(req,res)=>{
     try{
@@ -50,7 +50,7 @@ router.get('/:id',async(req,res)=>{
     }
 })
 
-//UPDATE A BOOK
+//UPDATE A PROJECT
 
 router.put('/:id',async(req,res)=>{
     try{
@@ -70,7 +70,7 @@ router.put('/:id',async(req,res)=>{
     }
 })
 
-//Delete a BOOK
+//Delete a PROJECT
 
 router.delete('/:id',async(req,res)=>{
     try{
@@ -79,7 +79,7 @@ router.delete('/:id',async(req,res)=>{
         if (!deleteBook){
             return res.status(404).send({message:'Project not found'})
         }else{
-        return res.status(200).send('Deleted Sucessfully')}
+        return res.status(200).send('Deleted SuCcessfully')}
     }
     catch(error){
         return res.status(500).send({message:error.message})
